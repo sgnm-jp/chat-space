@@ -26,6 +26,7 @@
 ### Association
 - has_many :messages, dependent: :delete_all
 - has_many :users, through: :groups_users
+- has_many :groups_users
 
 ## messagesテーブル
 |Column|Type|Options|
