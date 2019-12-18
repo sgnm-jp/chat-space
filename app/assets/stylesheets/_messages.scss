@@ -27,6 +27,8 @@
   @include width_height($w: 260px, $h: 20px);
   color: $c_Side_ber;
   line-height: 20px;
+  display: flex;
+  justify-content: space-between;
   &__name {
   }
   &__icons {
