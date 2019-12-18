@@ -33,6 +33,8 @@
   }
   &__icons {
     width: 60px;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 .Main_chat {
