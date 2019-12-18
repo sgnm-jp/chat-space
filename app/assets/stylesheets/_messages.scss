@@ -82,6 +82,9 @@
     &__box {
       padding-top: $Main_chat_padding-top;
       &__group_name {
+        color: $c_Main_chat_name;
+        margin-bottom: 15px;
+        font-size: 20px;
       }
       &__user_name {
       }
