@@ -107,6 +107,22 @@
   &__message_list {
     height: $Main_chat__message_list_height;
     background-color: $bgc_Main_chat__message_list;
+    padding: $Main_chat_padding;
+    padding-top: $Main_chat_padding-top;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    &__box {
+      &__sender {
+        &__user {
+        }
+        &__time {
+        }
+      }
+      &__message {
+      }
+    }
   }
   &__message_form {
     height: $footer_height;
