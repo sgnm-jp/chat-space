@@ -26,6 +26,12 @@
     &__block {
       padding-top: 20px;
       margin-bottom: 40px;
+      &__link {
+        @include width_height($w: 260px, $h: 45px);
+        color: $c_Side_ber;
+        text-decoration: none;
+        cursor: pointer;
+      }
     }
   }
 }
