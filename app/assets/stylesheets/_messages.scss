@@ -24,6 +24,7 @@
   }
 }
 .top_items {
+  @include width_height($w: 260px, $h: 20px);
   &__name {
   }
   &__icons {
