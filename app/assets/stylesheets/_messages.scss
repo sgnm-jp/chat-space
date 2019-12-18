@@ -79,6 +79,10 @@
     &::-webkit-scrollbar {
       display: none;
     }
+    &__box {
+    }
+    &__edit_btn {
+    }
   }
   &__message_list {
     height: $Main_chat__message_list_height;
