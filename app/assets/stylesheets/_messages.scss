@@ -35,6 +35,9 @@
     width: 60px;
     display: flex;
     justify-content: flex-end;
+    &__edit_account {
+      margin-left: 5px;
+    }
   }
 }
 .Main_chat {
