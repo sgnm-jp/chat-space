@@ -71,6 +71,14 @@
   &__group_info {
     height: $header_height;
     background-color: $bgc_Main_chat__group_info;
+    padding: $Main_chat_padding;
+    border-bottom: solid 1px #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
   &__message_list {
     height: $Main_chat__message_list_height;
