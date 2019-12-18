@@ -38,6 +38,12 @@
     &__edit_account {
       margin-left: 5px;
     }
+      a {
+        color: $c_Side_ber;
+        text-decoration: none;
+        text-align: right;
+        cursor: pointer;
+      }
   }
 }
 .Main_chat {
