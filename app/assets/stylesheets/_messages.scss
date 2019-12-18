@@ -124,6 +124,9 @@
           font-weight: bold;
         }
         &__time {
+          color: $c_Main_chat_detail;
+          margin-left: 10px;
+          font-size: 12px;
         }
       }
       &__message {
