@@ -146,6 +146,10 @@
         width: 100%;
         @include bgc_color($bgc: #ffffff, $c: $c_Main_chat_text);
         &__text {
+          @include width_height($w: 100%, $h: 50px);
+          padding: 0 40px 0 10px;
+          line-height: 50px;
+          border-style: none;
         }
         &__pict {
         }
