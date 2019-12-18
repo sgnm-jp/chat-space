@@ -152,6 +152,11 @@
           border-style: none;
         }
         &__pict {
+          color: #000000;
+          font-size: 1.3rem;
+              input {
+                display: none;
+            }
         }
       }
       &__send {
