@@ -1,4 +1,12 @@
 .Main_chat
   .Main_chat__group_info
+    .Main_chat__group_info__box
+      %p.Main_chat__group_info__box__group_name
+        group_name
+      %p.Main_chat__group_info__box__user_name
+        user_name
+    .Main_chat__group_info__edit_btn
+      = link_to "#" do
+        Edit
   .Main_chat__message_list
   .Main_chat__message_form
