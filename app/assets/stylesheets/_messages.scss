@@ -5,6 +5,7 @@
   display: flex;
 }
 .Side_ber {
+  @include width_height($w: $Side_ber_width, $h: 100vh);
   &__user_name {
   }
   &__group_list {
