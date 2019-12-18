@@ -35,5 +35,6 @@
     background-color: $bgc_Main_chat__message_list;
   }
   &__message_form {
+    height: $footer_height;
   }
 }
