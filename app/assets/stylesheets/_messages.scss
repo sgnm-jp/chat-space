@@ -25,6 +25,7 @@
 }
 .top_items {
   @include width_height($w: 260px, $h: 20px);
+  color: $c_Side_ber;
   &__name {
   }
   &__icons {
