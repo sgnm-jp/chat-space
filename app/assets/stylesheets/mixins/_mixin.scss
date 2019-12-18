@@ -2,3 +2,7 @@
   width: $w;
   height: $h;
 }
+@mixin bgc_color($bgc, $c) {
+  background-color: $bgc;
+  color: $c;
+}
