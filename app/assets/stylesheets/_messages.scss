@@ -92,6 +92,16 @@
       }
     }
     &__edit_btn {
+      height: 40px;
+      border: solid 1px $bgc_point;
+      margin-top: 28px;
+      a {
+        line-height: 40px;
+        padding: 0 20px;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+      }
     }
   }
   &__message_list {
