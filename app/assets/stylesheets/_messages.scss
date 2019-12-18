@@ -164,6 +164,11 @@
         }
       }
       &__send {
+        @include width_height($w: 100px, $h: 50px);
+        @include bgc_color($bgc: $bgc_point, $c: #ffffff);
+        padding: 0 30px;
+        margin-left: 15px;
+        text-align: center;
       }
     }
   }
