@@ -80,6 +80,7 @@
       display: none;
     }
     &__box {
+      padding-top: $Main_chat_padding-top;
       &__group_name {
       }
       &__user_name {
