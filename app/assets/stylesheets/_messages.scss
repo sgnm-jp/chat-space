@@ -8,6 +8,7 @@
   @include width_height($w: $Side_ber_width, $h: 100vh);
   @include bgc_color($bgc: $bgc_Side_ber__user_name, $c: $c_Side_ber);
   &__user_name {
+    height: $header_height;
   }
   &__group_list {
     &__block {
