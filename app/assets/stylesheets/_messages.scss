@@ -138,5 +138,17 @@
   &__message_form {
     height: $footer_height;
     background-color: $bgc_Main_chat__message_form;
+    padding: $Main_chat_padding;
+    padding-top: 20px;
+    &__box {
+      &__input {
+        &__text {
+        }
+        &__pict {
+        }
+      }
+      &__send {
+      }
+    }
   }
 }
