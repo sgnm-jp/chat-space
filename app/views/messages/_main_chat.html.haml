@@ -18,3 +18,10 @@
       .Main_chat__message_list__box__message
         text & pict
   .Main_chat__message_form
+    .Main_chat__message_form__box
+      .Main_chat__message_form__box__input
+        %input{type: "text", placeholder: "type a message", class: "Main_chat__message_form__box__input__text"}
+        %label{class: "Main_chat__message_form__box__input__pict"}
+          = icon("far", "image")
+          %input{type: "file"}
+      %input{type: "submit", value: "Send", class: "Main_chat__message_form__box__send"}
