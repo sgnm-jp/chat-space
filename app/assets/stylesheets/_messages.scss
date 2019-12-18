@@ -31,6 +31,10 @@
         color: $c_Side_ber;
         text-decoration: none;
         cursor: pointer;
+        &__group_name {
+          font-size: 15px;
+          margin-bottom: 5px;
+        }
       }
     }
   }
