@@ -9,6 +9,7 @@
   @include bgc_color($bgc: $bgc_Side_ber__user_name, $c: $c_Side_ber);
   &__user_name {
     height: $header_height;
+    background-color: $bgc_Side_ber__user_name;
   }
   &__group_list {
     &__block {
