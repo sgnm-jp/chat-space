@@ -28,6 +28,7 @@
   @include width_height($w: $Main_chat_width, $h: 100vh);
   &__group_info {
     height: $header_height;
+    background-color: $bgc_Main_chat__group_info;
   }
   &__message_list {
   }
