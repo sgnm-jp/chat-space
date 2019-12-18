@@ -143,6 +143,8 @@
     &__box {
       display: flex;
       &__input {
+        width: 100%;
+        @include bgc_color($bgc: #ffffff, $c: $c_Main_chat_text);
         &__text {
         }
         &__pict {
