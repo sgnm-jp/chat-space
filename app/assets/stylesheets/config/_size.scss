@@ -1,0 +1,11 @@
+$Side_ber_width: 300px;
+$Main_chat_width: calc(100vw - #{$Side_ber_width});
+
+$header_height: 100px;
+$Side_ber__group_list_height: calc(100vh - #{$header_height});
+$footer_height: 90px;
+$Main_chat__message_list_height: calc(100vh - (#{$header_height} + #{$footer_height}));
+
+$Side_bar_padding: 0 20px;
+$Main_chat_padding: 0 40px;
+$Main_chat_padding-top: 35px;

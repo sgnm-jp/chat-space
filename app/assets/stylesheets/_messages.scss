@@ -1,3 +1,175 @@
 * {
   box-sizing: border-box;
 }
+.wrapper {
+  display: flex;
+}
+.Side_ber {
+  @include width_height($w: $Side_ber_width, $h: 100vh);
+  @include bgc_color($bgc: $bgc_Side_ber__user_name, $c: $c_Side_ber);
+  font-weight: bold;
+  &__user_name {
+    height: $header_height;
+    background-color: $bgc_Side_ber__user_name;
+    padding: $Side_bar_padding;
+    display: flex;
+    align-items: center;
+  }
+  &__group_list {
+    height: $Side_ber__group_list_height;
+    background-color: $bgc_Side_ber__group_list;
+    padding: $Side_bar_padding;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    &__block {
+      padding-top: 20px;
+      margin-bottom: 40px;
+      &__link {
+        @include width_height($w: 260px, $h: 45px);
+        color: $c_Side_ber;
+        text-decoration: none;
+        cursor: pointer;
+        &__group_name {
+          font-size: 15px;
+          margin-bottom: 5px;
+        }
+        &__new_message {
+          font-size: 11px;
+        }  
+      }
+    }
+  }
+}
+.top_items {
+  @include width_height($w: 260px, $h: 20px);
+  color: $c_Side_ber;
+  line-height: 20px;
+  display: flex;
+  justify-content: space-between;
+  &__name {
+    font-size: 16px;
+  }
+  &__icons {
+    width: 60px;
+    display: flex;
+    justify-content: flex-end;
+    &__edit_account {
+      margin-left: 5px;
+    }
+      a {
+        color: $c_Side_ber;
+        text-decoration: none;
+        text-align: right;
+        cursor: pointer;
+      }
+  }
+}
+.Main_chat {
+  @include width_height($w: $Main_chat_width, $h: 100vh);
+  &__group_info {
+    height: $header_height;
+    background-color: $bgc_Main_chat__group_info;
+    padding: $Main_chat_padding;
+    border-bottom: solid 1px #eeeeee;
+    display: flex;
+    justify-content: space-between;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    &__box {
+      padding-top: $Main_chat_padding-top;
+      &__group_name {
+        color: $c_Main_chat_name;
+        margin-bottom: 15px;
+        font-size: 20px;
+      }
+      &__user_name {
+        color: $c_Main_chat_detail;
+        font-size: 12px;
+      }
+    }
+    &__edit_btn {
+      height: 40px;
+      border: solid 1px $bgc_point;
+      margin-top: 28px;
+      a {
+        line-height: 40px;
+        padding: 0 20px;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+      }
+    }
+  }
+  &__message_list {
+    height: $Main_chat__message_list_height;
+    background-color: $bgc_Main_chat__message_list;
+    padding: $Main_chat_padding;
+    padding-top: $Main_chat_padding-top;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    &__box {
+      margin-bottom: 46px;
+      &__sender {
+        margin-bottom: 12px;
+        display: flex;
+        &__user {
+          color: $c_Main_chat_name;
+          font-size: 16px;
+          font-weight: bold;
+        }
+        &__time {
+          color: $c_Main_chat_detail;
+          margin-left: 10px;
+          font-size: 12px;
+        }
+      }
+      &__message {
+        color: $c_Main_chat_text;
+        font-size: 14px;
+      }
+    }
+  }
+  &__message_form {
+    height: $footer_height;
+    background-color: $bgc_Main_chat__message_form;
+    padding: $Main_chat_padding;
+    padding-top: 20px;
+    &__box {
+      display: flex;
+      &__input {
+        width: 100%;
+        @include bgc_color($bgc: #ffffff, $c: $c_Main_chat_text);
+        position: relative;
+        &__text {
+          @include width_height($w: 100%, $h: 50px);
+          padding: 0 40px 0 10px;
+          line-height: 50px;
+          border-style: none;
+        }
+        &__pict {
+          color: #000000;
+          font-size: 1.3rem;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+              input {
+                display: none;
+            }
+        }
+      }
+      &__send {
+        @include width_height($w: 100px, $h: 50px);
+        @include bgc_color($bgc: $bgc_point, $c: #ffffff);
+        padding: 0 30px;
+        margin-left: 15px;
+        text-align: center;
+      }
+    }
+  }
+}
