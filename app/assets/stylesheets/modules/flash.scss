@@ -1,0 +1,12 @@
+.notification {
+  .notice {
+    background-color: $bgc_point;
+    color: $c_Side_ber;
+    text-align: center;
+  }
+  .alert {
+    background-color: $bgc_notification_alert;
+    color: $c_Side_ber;
+    text-align: center;
+  }
+}
