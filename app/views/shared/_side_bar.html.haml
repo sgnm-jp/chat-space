@@ -13,8 +13,8 @@
   .Side_ber__group_list
     - current_user.groups.each do |group|
       .Side_ber__group_list__block
-        = link_to "#", class: "Side_ber__group_list__block__link" do
+        = link_to group_messages_path(group), class: "Side_ber__group_list__block__link" do
           %p.Side_ber__group_list__block__link__group_name
             = group.name
           %p.Side_ber__group_list__block__link__new_message
-            It's new
+            = group.show_last_message

@@ -1,0 +1,11 @@
+.Main_chat__message_list__box
+  .Main_chat__message_list__box__sender
+    %p.Main_chat__message_list__box__sender__user
+      = message.user.nickname
+    %p.Main_chat__message_list__box__sender__time
+      = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
+  .Main_chat__message_list__box__message
+    - if message.message.present?
+      %p
+        = message.message
+    = image_tag message.image.url if message.image.present?
