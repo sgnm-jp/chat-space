@@ -4,6 +4,9 @@
       %p.Main_chat__group_info__box__group_name
         = @group.name
       %p.Main_chat__group_info__box__user_name
+        Member : 
+        - @group.users.each do |user|
+          = user.nickname
     .Main_chat__group_info__edit_btn
         Edit
   .Main_chat__message_list
